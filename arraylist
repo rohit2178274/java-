@@ -1,0 +1,11 @@
+import java.util.*;  
+class  Main{  
+   public static void main(String args[]){  
+     ArrayList <String> listm = new ArrayList<String>();
+     listm.add("rohit ");
+     listm.add("rahul");
+     listm.add("sakshi");
+     listm.add(1,"ram"); // adding ram at 2 postion 
+     System.out.println(listm);
+   }  
+}
