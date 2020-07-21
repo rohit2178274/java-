@@ -1,0 +1,13 @@
+// default constructor 
+public class Main
+{
+    
+        int n=94;
+        int mo = 64;
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		Main m = new Main();
+		System.out.println(m.mo);
+		System.out.println(m.n);
+	}
+}
