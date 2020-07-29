@@ -1,22 +1,23 @@
-#include <iostream>
-
-using namespace std;
-
-int main()
+import java.util.Scanner;
+public class Main
 {
-    long long int  min;
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+    long  min;
     long year;
-    cout << "enter minutes" << endl;
-    cin >> min;
+    System.out.println("enter minutes");
+    min = sc.nextLong();
     if(min > 525600){
     year = min / 525600;
     double day = min % 525600;
-    cout << " minutes in "  << year << " year is and " << day << "days" << endl;
+   System.out.println(" minutes in " + year + " year is and " + day + "days");
     }
     else{
         long days = min / 1440;
-        cout << "minutes in days" << days << endl;
+        System.out.println("minutes in days" + days );
     }
+    
 
-    return 0;
+	}
 }
+
