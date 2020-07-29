@@ -1,0 +1,37 @@
+import java.util.*;
+class Employee{
+    int add;
+    String name;
+    int yearofJoning;
+    
+    public void rohit(String name,int add,int yearofJoning){
+        this.name = name;
+        this.add = add;
+        this.yearofJoning = yearofJoning;
+        System.out.println(name+ "\t" + add + "\t"+ yearofJoning);
+    }
+    
+    public void rahul(String name,int add,int yearofJoning){
+        this.name = name;
+        this.add = add;
+        this.yearofJoning = yearofJoning;
+        System.out.println(name+ "\t" + add + "\t"+ yearofJoning);
+    }
+
+    public void roh(String name,int add,int yearofJoning){
+        this.name = name;
+        this.add = add;
+        this.yearofJoning = yearofJoning;
+        System.out.println(name+ "\t" + add + "\t"+ yearofJoning);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    System.out.println("Name " + "  Address " + " YearofJoning ");
+		Employee p = new Employee();
+		p.rohit("rohit",343,2019);
+		p.rahul("rahul",345,2020);
+		p.roh("rohan",321,2018);
+	}
+}
