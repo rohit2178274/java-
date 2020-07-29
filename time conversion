@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    long long int  min;
+    long year;
+    cout << "enter minutes" << endl;
+    cin >> min;
+    if(min > 525600){
+    year = min / 525600;
+    double day = min % 525600;
+    cout << " minutes in "  << year << " year is and " << day << "days" << endl;
+    }
+    else{
+        long days = min / 1440;
+        cout << "minutes in days" << days << endl;
+    }
+
+    return 0;
+}
