@@ -1,0 +1,46 @@
+package enccapsulate;
+class Test{
+	private String name;
+	private int roll;
+	private int adno;
+	public String getName() {
+		return name;
+	}
+	public int getRoll() {
+		return roll;
+	}
+	public int getAdno() {
+		return adno;
+	}
+	
+	public void  setName(String newName) {
+		name = newName;
+	}
+	public void setRoll(int newRoll) {
+		roll =  newRoll;
+	}
+	public void setAdno(int newAdno) {
+		adno = newAdno;
+	}
+}
+
+
+
+public class Encap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Test  t1 = new Test();
+		t1.setName("rohit kmar");
+		t1.setRoll(34);
+		t1.setAdno(45);
+		System.out.println("name of student \t" + t1.getName());
+		System.out.println("Roll no of student \t" + t1.getRoll());
+		System.out.println("name of student \t" + t1.getAdno());
+
+
+		
+
+	}
+
+}
