@@ -1,0 +1,30 @@
+package hashcode;
+import java.util.*;
+import java.util.Map.Entry;
+public class HashCode {
+
+	public static void main(String[] args) {
+		
+		Map<Integer , String > number = new HashMap<>();
+		number.put( 1,"rohit" );
+		number.put(2, "orange");
+		number.put(3, "guava");
+		number.put(4, "orange");
+		number.put(4, "orange");
+		number.put(6, "apple");
+		number.put(7, "mango");
+		number.put(8, "litchi");
+		System.out.println(number);
+		System.out.println("1 boolean" + number.isEmpty());  // 
+		System.out.println("2 boolean"+ number.containsKey(4));
+		System.out.println("3 boolean" + number.containsValue("orange"));
+		System.out.println("4 " + number.get(6));  // it return the value for the specific key
+		System.out.println("5" + "number set value" + number.keySet());
+		System.out.println("9" + number.putIfAbsent(2, "red chilies"));
+		System.out.println("10" + number.entrySet());
+		
+		
+		for(Map.Entry en: number.entrySet()) {
+			System.out.println("iterating" + en + " ");
+		}
+	}
