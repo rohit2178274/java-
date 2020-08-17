@@ -1,0 +1,59 @@
+package absrtrt;
+
+abstract class Shape{
+	String colour;
+	public abstract String toString(); // abstract method is called
+	abstract double area();
+	public Shape(String colour) {  // abstract constructor is called
+		System.out.println("Shape constructor is caleed");
+		this.colour= colour;
+	}
+	public String getColour(){
+		return colour;
+	}
+
+}
+class Circle extends Shape{
+	double radius;
+	Circle(String colour,double radius){
+		super(colour);
+		System.out.println("circle constructor is called");
+		this.radius= radius;
+	}
+	double area() {
+		return Math.PI * Math.pow(radius, 2);
+	}
+	public String toString() {
+		return "Circle color is " + super.colour +  
+                "and area is : " + area(); 
+	}
+}
+class Rectangle extends Shape{
+	int ln;
+	int wd;
+	public Rectangle(String colour,int length,int width) {
+		super(colour);
+		System.out.println("Rectangle constructor is called");
+		this.ln = length;
+		this.wd = width;
+	}
+	double area() {
+		return ln*wd;
+	}
+	public String toString() { 
+        return "Rectangle color is " + super.colour +  
+                           "and area is : " + area(); 
+    }
+}
+public class TestAbstrt {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Shape s1 = new Circle("red",3.4);
+        Shape s2 = new Rectangle("Yellow", 2, 4); 
+
+        System.out.println(s1.toString());
+        System.out.println(s2.toString()); 
+	}
+
+}
